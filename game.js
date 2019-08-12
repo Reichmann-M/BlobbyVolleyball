@@ -64,9 +64,17 @@ function disableOptions(){
 }
 function endgame(){
   if(gamelength()<=player1.score){
-    return "Player 1"
+    if(document.getElementById("nameplayer1").value!=""){
+      return document.getElementById("nameplayer1").value;
+    }else{
+      return "Player 1";
+    }
   }else if(gamelength()<=player2.score){
-    return "Player 2"
+    if(document.getElementById("nameplayer2").value!=""){
+      return document.getElementById("nameplayer2").value;
+    }else{
+      return "Player 2";
+    }
   }else{
     return false;
   }

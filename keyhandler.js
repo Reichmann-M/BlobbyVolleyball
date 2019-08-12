@@ -20,7 +20,7 @@ function changeVel(){
   }
   if(keys[87]){
     if(player1.grounded){
-      player1.vel.y=-12.3;
+      player1.vel.y=-12.5;
       player1.grounded=false;
     }
   }
@@ -46,7 +46,7 @@ function changeVel(){
   }
   if(keys[38]){
     if(player2.grounded){
-      player2.vel.y=-12.3;
+      player2.vel.y=-12.5;
       player2.grounded=false;
     }
   }
