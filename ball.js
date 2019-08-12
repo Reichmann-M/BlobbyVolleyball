@@ -60,6 +60,15 @@ class Ball{
         this.side="right";
       }
     }
+    // if(this.side=="right"){
+    //   if(this.y+this.size/2+this.vel.y>=height-net.h&&this.x+this.vel.x-this.size/2<net.x){
+    //     this.x=net.x+net.w-1;
+    //   }
+    // }else{
+    //   if(this.y+this.size/2+this.vel.y>=height-net.h&&this.x+this.vel.x+this.size/2>net.x){
+    //     this.x=net.x-net.w+1;
+    //   }
+    // }
   }
   hitscreenedge(){
     if(this.x-this.size/2<0||this.x+this.size/2>width){

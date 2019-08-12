@@ -27,10 +27,10 @@ function draw() {
   player2.hitball();
   net.show();
   changeVel();
+  ball.hitnet();
   ball.show();
   ball.update();
   ball.hitscreenedge();
-  ball.hitnet();
 }
 
 function changeBG(){
