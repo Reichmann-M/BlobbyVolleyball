@@ -3,8 +3,11 @@ function preload(){
   player1Img=loadImage("player1.png");
   player2Img=loadImage("player2.png");
   ballImg=loadImage("ball.png");
+  winImg=loadImage("winImg.png")
   splashsound=loadSound("hitball.mp3");
   scoresound=loadSound("score.mp3");
+  schmettern=loadSound("schmettern.mp3");
+  win=loadSound("win.mp3");
 }
 function setup() {
   createCanvas(1200,800);

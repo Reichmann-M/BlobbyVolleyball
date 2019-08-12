@@ -72,13 +72,15 @@ class Player{
         ball.vel.x=(ball.x-this.x)/8;
         ball.vel.y=(ball.y-this.y)/7;
         if(this.y<ball.y){
-          ball.vel.mult(2.8);
+          ball.vel.mult(2);
+          schmettern.play();
+        }else{
+          splashsound.play();
         }
         ball.x+=ball.vel.x;
         ball.y+=ball.vel.y;
         ball.inair=true;
         counthits(this);
-        splashsound.play();
       }
     }
   }

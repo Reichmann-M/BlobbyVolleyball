@@ -12,3 +12,6 @@ let player2Img;
 let ballImg;
 let splashsound;
 let scoresound;
+let schmettern;
+let win;
+let winImg;

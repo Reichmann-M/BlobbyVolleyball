@@ -6,6 +6,7 @@ function scored(){
   }
 }
 function reset(side){
+  scoresound.play();
   hitcountleft=0;
   hitcountright=0;
   ball=new Ball(side);
@@ -23,7 +24,6 @@ function reset(side){
 }
 function game(){
   if(scored()){
-    scoresound.play();
     if(ball.side=="left"){
       reset("right");
     }else{
@@ -84,6 +84,8 @@ function endscreen(){
     textSize(50);
     text("Victory Royale: "+endgame(),width/4,height/8);
     text("Press mouse to continue", 10,height/2-60);
+    win.play();
+    image(winImg,width/2-200,height-400,400,400);
     pop();
     noLoop();
   }

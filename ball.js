@@ -83,6 +83,7 @@ class Ball{
   hitnet(){
     if(this.x+this.size/2>net.x-net.w/2&&this.x-this.size/2<net.x+net.w/2){
       if(this.y>height-net.h+net.w){
+        splashsound.play();
         this.vel.x=-this.vel.x;
         if(this.x<net.x){
           this.x=net.x-net.w/2-this.size/2;
@@ -103,6 +104,7 @@ class Ball{
         x=Math.sqrt(x);
         this.vel.x/=x;
         this.vel.y/=x;
+        splashsound.play();
       }
     }
   }
