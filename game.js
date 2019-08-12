@@ -32,6 +32,7 @@ function game(){
   }
   endscreen();
   disableOptions();
+  animate();
 }
 function counthits(player){
   if(player.side=="left"){
@@ -96,5 +97,14 @@ function endscreen(){
     image(winImg,width/2-200,height-400,400,400);
     pop();
     noLoop();
+  }
+}
+function animate(){
+  if(frameCount%60==0){
+    if(imgIndex<3){
+      imgIndex++;
+    }else{
+      imgIndex=0;
+    }
   }
 }

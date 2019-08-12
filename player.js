@@ -31,7 +31,11 @@ class Player{
     fill(0);
     noStroke();
     imageMode(CENTER);
-    image(this.img,this.x,this.y,this.size,this.size*1.5)
+    if(this.side=="left"){
+      image(player1img[imgIndex],this.x,this.y,this.size,this.size*1.5);
+    }else{
+      image(player2img[imgIndex],this.x,this.y,this.size,this.size*1.5);
+    }
     // rect(this.x,this.y,this.size,this.size*1.5);
     pop();
     textSize(30);

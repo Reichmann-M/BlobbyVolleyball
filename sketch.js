@@ -8,6 +8,16 @@ function preload(){
   scoresound=loadSound("score.mp3");
   schmettern=loadSound("schmettern.mp3");
   win=loadSound("win.mp3");
+
+  player1img.push(loadImage("player1.png"));
+  player1img.push(loadImage("player1_1.png"));
+  player1img.push(loadImage("player1_2.png"));
+  player1img.push(loadImage("player1_3.png"));
+
+  player2img.push(loadImage("player2.png"));
+  player2img.push(loadImage("player2_1.png"));
+  player2img.push(loadImage("player2_2.png"));
+  player2img.push(loadImage("player2_3.png"));
 }
 function setup() {
   createCanvas(1200,800);
