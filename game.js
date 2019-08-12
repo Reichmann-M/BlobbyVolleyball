@@ -94,7 +94,9 @@ function endscreen(){
     text("Victory Royale: "+endgame(),width/4,height/8);
     text("Press mouse to continue", 10,height/2-60);
     win.play();
-    image(winImg,width/2-200,height-400,400,400);
+    if(document.getElementById("winImg").checked){
+        image(winImg,width/2-200,height-400,400,400);
+    }
     pop();
     noLoop();
   }
