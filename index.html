@@ -15,20 +15,42 @@
     <script src="keyhandler.js"></script>
     <script src="global.js"></script>
     <script src="game.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <br>
-    <div align="center">
-        Spieler 1<input type="text" id="nameplayer1"></input>vs Spieler 2 <input type="text" id="nameplayer2"></input><br/>
-        Endscreenpicture<input type="checkbox" checked="true" id="winImg"/>
+    <header >
+        <span class="title">
+            Blobby Volleyball
+        </span>
+    </header>
+
+      <div class="container">
+        <div class="input">
+          <label>
+            Spieler 1<input type="text" id="nameplayer1"></input>
+          </label>
+          vs
+          <label>
+            Spieler 2 <input type="text" id="nameplayer2"/>
+          </label>
+          <label>
+            Endscreenpicture<input type="checkbox" checked="true" id="winImg"/>
+          </label>
+          <label for="rounds">Bis
+            <select name="rounds" id="rounds">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+            </select>
+          </label>
+          <label>
+            Greenscreen <input type="checkbox" id="greenscreen"/>
+          </label>
+        </div>
+        <div id="canvas"></div>
       </div>
-    </br>
-    <label for="rounds">Bis</label>
-    <select name="rounds" id="rounds">
-        <option value="5">5</option>
-        <option value="10">10</option>
-        <option value="15">15</option>
-        <option value="20">20</option>
-    </select>
+    
+    <footer Style="width:100%"></footer>
   </body>
 </html>

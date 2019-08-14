@@ -20,7 +20,8 @@ function preload(){
   player2img.push(loadImage("player2_3.png"));
 }
 function setup() {
-  createCanvas(1200,800);
+  canvas=createCanvas(1200,800);
+  canvas.parent("canvas");
   bgsetup();
   net=new Net();
   player1=new Player('left');
