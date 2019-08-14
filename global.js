@@ -20,3 +20,4 @@ let player2img=[];
 let imgIndex=0;
 let canvas;
 let focus;
+let timestamp;

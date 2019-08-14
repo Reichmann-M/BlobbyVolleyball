@@ -25,6 +25,7 @@ class Player{
     }else{
       this.img=player2Img;
     }
+    this.edges=[createVector(this.x-this.size/2,this.y+1.5*2*this.size),createVector(this.x-this.size/2,this.y-1.5*2*this.size),createVector(this.x+this.size/2,this.y+1.5*2*this.size),createVector(this.x+this.size/2,this.y-1.5*2*this.size)];
   }
   show(){
     push();
@@ -46,6 +47,7 @@ class Player{
     }
   }
   update(){
+    this.edges=[createVector(this.x-this.size/2,this.y+1.5*2*this.size),createVector(this.x-this.size/2,this.y-1.5*2*this.size),createVector(this.x+this.size/2,this.y+1.5*2*this.size),createVector(this.x+this.size/2,this.y-1.5*2*this.size)];
     this.x+=this.vel.x;
     this.y+=this.vel.y;
     if(!this.grounded){
@@ -71,6 +73,10 @@ class Player{
   hitball(){
     if(this.y-this.size*1.5/2<=ball.y+ball.size/2&&this.y+this.size*1.5/2>=ball.y-ball.size/2){
       if(this.x-this.size/2<=ball.x+ball.size/2&&this.x+this.size/2>=ball.x-ball.size/2){
+        if(Date.now()-timestamp<75){
+          keephitcount(this);
+        }
+        timestamp=Date.now();
         ball.x-=ball.vel.x;
         ball.y-=ball.vel.y;
         ball.vel.x=(ball.x-this.x)/8;

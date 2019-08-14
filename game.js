@@ -49,6 +49,13 @@ function counthits(player){
     }
   }
 }
+function keephitcount(player){
+  if(player.side=="left"){
+    hitcountleft--;
+  }else{
+    hitcountright--;
+  }
+}
 function gamelength(){
   return document.getElementById("rounds").value;
 }
