@@ -19,3 +19,4 @@ let player1img=[];
 let player2img=[];
 let imgIndex=0;
 let canvas;
+let focus;

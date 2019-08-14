@@ -27,11 +27,11 @@
       <div class="container">
         <div class="input">
           <label>
-            Spieler 1<input type="text" id="nameplayer1"></input>
+            Spieler 1<input type="text" id="nameplayer1" onfocusin="disable_playermovement()" onfocusout="enable_playermovement()"></input>
           </label>
           vs
           <label>
-            Spieler 2 <input type="text" id="nameplayer2"/>
+            Spieler 2 <input type="text" id="nameplayer2" onfocusin="disable_playermovement()" onfocusout="enable_playermovement()"/>
           </label>
           <label>
             Endscreenpicture<input type="checkbox" checked="true" id="winImg"/>
@@ -50,7 +50,7 @@
         </div>
         <div id="canvas"></div>
       </div>
-    
+
     <footer Style="width:100%"></footer>
   </body>
 </html>

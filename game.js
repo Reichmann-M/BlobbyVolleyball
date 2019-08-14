@@ -62,6 +62,13 @@ function disableOptions(){
       options[i].disabled=false;
     }
   }
+  if(ball.inair){
+    document.getElementById("nameplayer1").disabled=true;
+    document.getElementById("nameplayer2").disabled=true;
+  }else{
+    document.getElementById("nameplayer1").disabled=false;
+    document.getElementById("nameplayer2").disabled=false;
+  }
 }
 function endgame(){
   if(gamelength()<=player1.score){
