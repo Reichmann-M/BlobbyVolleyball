@@ -73,3 +73,27 @@ input:focus {
   padding: 0px 40px 80px 40px;
   width: fit-content;
 }
+.description{
+  margin:20px 50px;
+  padding:40px;
+  border:2px solid black;
+  border-radius:20px;
+  display:flex;
+  flex-direction: row;
+  width:470px;
+  justify-content: space-around;
+}
+.description_box{
+  display:flex;
+  align-items: left;
+  flex-direction: row;
+}
+.column{
+  display:flex;
+  flex-direction: column;
+  padding:10px 20px 10px 0px;
+}
+.row{
+  display:flex;
+  flex-direction:row;
+}
